@@ -1,7 +1,11 @@
-export default function Home() {
+import { Welcome } from "@/components/Welcome/Welcome";
+import { ColorSchemeToggle } from "@/components/ColorSchemeToggle/ColorSchemeToggle";
+
+export default function HomePage() {
   return (
-<div className="text-blue-500">
-Main Content
-</div>
-  )
+    <>
+      <Welcome />
+      <ColorSchemeToggle />
+    </>
+  );
 }

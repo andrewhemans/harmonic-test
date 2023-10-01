@@ -9,10 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mantine/core": "^7.1.0",
+    "@mantine/dates": "^7.1.0",
+    "@mantine/dropzone": "^7.1.0",
+    "@mantine/form": "^7.1.0",
+    "@mantine/hooks": "^7.1.0",
+    "@mantine/modals": "^7.1.0",
+    "@mantine/tiptap": "^7.1.0",
+    "@tabler/icons-react": "^2.38.0",
+    "@tiptap/extension-link": "^2.1.11",
+    "@tiptap/react": "^2.1.11",
+    "@tiptap/starter-kit": "^2.1.11",
+    "dayjs": "^1.11.10",
     "feather-icons-react": "^0.6.2",
+    "firebase": "^10.4.0",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-firebase-hooks": "^5.1.1"
   },
   "devDependencies": {
     "@types/node": "latest",
@@ -21,8 +35,9 @@
     "autoprefixer": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",
-    "postcss": "latest",
-    "tailwindcss": "latest",
+    "postcss": "^8.4.31",
+    "postcss-preset-mantine": "^1.7.0",
+    "postcss-simple-vars": "^7.0.1",
     "typescript": "latest"
   }
 }
