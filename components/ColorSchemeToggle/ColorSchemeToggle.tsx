@@ -1,15 +1,27 @@
 "use client";
 
-import { Button, Group, useMantineColorScheme } from "@mantine/core";
+import {
+  Button,
+  Group,
+  useMantineColorScheme,
+  ActionIcon,
+} from "@mantine/core";
+import { Moon, Sun, Phone } from "feather-icons-react";
 
 export function ColorSchemeToggle() {
   const { setColorScheme } = useMantineColorScheme();
 
   return (
-    <Group justify="center" mt="xl">
-      <Button onClick={() => setColorScheme("light")}>Light</Button>
-      <Button onClick={() => setColorScheme("dark")}>Dark</Button>
-      <Button onClick={() => setColorScheme("auto")}>Auto</Button>
+    <Group justify="center">
+      <ActionIcon onClick={() => setColorScheme("light")}>
+        <Sun />
+      </ActionIcon>
+      <ActionIcon onClick={() => setColorScheme("dark")}>
+        <Moon />
+      </ActionIcon>
+      <ActionIcon onClick={() => setColorScheme("auto")}>
+        <Phone />
+      </ActionIcon>
     </Group>
   );
 }
